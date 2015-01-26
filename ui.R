@@ -20,6 +20,9 @@ shinyUI(
     submitButton("Submit")
     ),
     mainPanel(
+      h4('Sabermetrics is the term for "advanced" statistics used to value individual players and predict team results'),
+      h4('Choose a predictor from the top selection box, and a team statistic to predict'),
+      h4('The individual statistics are summed and a linear model is fitted to predict the team result from the sum of individuals'),
       h3('Results of linear model'),
       h4('Using '), verbatimTextOutput("predictor"),
       h4(' to Predict'), verbatimTextOutput("prediction"),
